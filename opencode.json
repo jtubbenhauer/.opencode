@@ -8,6 +8,11 @@
     ".github/instructions/*.md",
     "~/.config/opencode/instructions/*.md"
   ],
+  "agent": {
+    "build": {
+      "disable": true
+    }
+  },
   "mcp": {
     "clickup": {
       "type": "local",

@@ -11,6 +11,7 @@ The user leaves review notes while reading code in Neovim. These are stored in `
 ## When to Check
 
 When the user asks you to fix notes, fixups, review notes, or any variation like:
+
 - "fix the notes" / "fix the fixups" / "fix the review notes"
 - "address the notes I left"
 - "fix my review comments"
@@ -33,7 +34,7 @@ When the user asks you to fix notes, fixups, review notes, or any variation like
    a. Read the referenced file at the specified line(s)
    b. Understand the note and apply the fix
    c. After successfully fixing that item, remove that specific line from `.opencode/fixups.md`
-3. After all entries are addressed, the file should contain only the `# Review Notes` header
+3. After all entries are addressed, delete the `.opencode/fixups.md` file entirely
 
 ## Important
 
