@@ -1,0 +1,39 @@
+skills/plan-writing/SKILL.md
+  5ccf41282923e36e 1-58
+skills/fixup-workflow/SKILL.md
+  5ccf41282923e36e 1-33
+skills/opencode-config/SKILL.md
+  5ccf41282923e36e 1-54
+agents/plan.md
+  5ccf41282923e36e 2,4-5,22-28,31,33,35,37,39,41-43,45,47,49-50,52,54-56,58,60-61,63-70,72,74-75,78,80-81,83,85-88,90-107,109-112
+.gitignore
+  5ccf41282923e36e 1-6
+agents/implement.md
+  5ccf41282923e36e 4,117,131-137
+instructions/git-discipline.instructions.md
+  5ccf41282923e36e 1-26
+opencode.json
+  5ccf41282923e36e 11-15
+instructions/fixup-notes.instructions.md
+  5ccf41282923e36e 14,37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.0",
+  "base_commit_sha": "5d6dfa33318e5acab64a225b1fa6b6659d83a863",
+  "prompts": {
+    "5ccf41282923e36e": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_25f5bda91ffe3UkkmiyR2pNrn4",
+        "model": "github-copilot/claude-opus-4.7"
+      },
+      "human_author": "Jack Tubbenhauer",
+      "messages": [],
+      "total_additions": 305,
+      "total_deletions": 268,
+      "accepted_lines": 305,
+      "overriden_lines": 0
+    }
+  }
+}
