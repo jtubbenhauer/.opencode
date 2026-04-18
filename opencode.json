@@ -1,0 +1,31 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "autoupdate": false,
+  "watcher": {
+    "ignore": ["node_modules/**", "dist/**", ".git/**"]
+  },
+  "instructions": [
+    ".github/instructions/*.md",
+    "~/.config/opencode/instructions/*.md"
+  ],
+  "mcp": {
+    "clickup": {
+      "type": "local",
+      "enabled": true,
+      "command": ["npx", "-y", "mcp-remote", "https://mcp.clickup.com/mcp"],
+      "environment": {
+        "CLICKUP_MCP_LICENSE_KEY": "{env:CLICKUP_MCP_LICENSE_KEY}",
+        "CLICKUP_API_KEY": "{env:CLICKUP_API_KEY}",
+        "CLICKUP_TEAM_ID": "{env:CLICKUP_TEAM_ID}",
+        "DOCUMENT_SUPPORT": "true"
+      }
+    },
+    "github": {
+      "type": "remote",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "Authorization": "Bearer {env:GITHUB_KEY}"
+      }
+    }
+  }
+}
