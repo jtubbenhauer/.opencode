@@ -1,0 +1,64 @@
+skills/get-to-the-point/SKILL.md
+  ba1999da86266e4e 37-70
+agents/implement.md
+  5ccf41282923e36e 150-156,162
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.0",
+  "base_commit_sha": "b5d11514cfd55470015002b1036da9c8e9b9e71e",
+  "prompts": {
+    "5ccf41282923e36e": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_25f5bda91ffe3UkkmiyR2pNrn4",
+        "model": "github-copilot/claude-opus-4.7"
+      },
+      "human_author": "Jack Tubbenhauer",
+      "messages": [],
+      "total_additions": 8,
+      "total_deletions": 3,
+      "accepted_lines": 8,
+      "overriden_lines": 0
+    },
+    "7fa0339d1da9bb18": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_26c44f30bffeSMPE1CUJgm54ws",
+        "model": "github-copilot/claude-opus-4.6"
+      },
+      "human_author": "Jack Tubbenhauer",
+      "messages": [],
+      "total_additions": 10,
+      "total_deletions": 0,
+      "accepted_lines": 0,
+      "overriden_lines": 0
+    },
+    "ba1999da86266e4e": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_2582df8fdffe8kwS95UxdICKGJ",
+        "model": "github-copilot/claude-opus-4.7"
+      },
+      "human_author": "Jack Tubbenhauer",
+      "messages": [],
+      "total_additions": 30,
+      "total_deletions": 8,
+      "accepted_lines": 30,
+      "overriden_lines": 0
+    },
+    "d0efffb0a2d040c1": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_2671da8dfffe709evllZSwlvzc",
+        "model": "github-copilot/claude-opus-4.7"
+      },
+      "human_author": "Jack Tubbenhauer",
+      "messages": [],
+      "total_additions": 21,
+      "total_deletions": 8,
+      "accepted_lines": 0,
+      "overriden_lines": 0
+    }
+  }
+}
