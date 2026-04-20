@@ -147,14 +147,19 @@ Follow Discover → Propose → Execute → Validate.
 **2. Propose**
 
 - Briefly state what you'll change in chat (1-2 lines, not a ceremony)
-- Skip this if a plan file already covers it
-- Skip this for trivial single-line fixes
-- If you're about to do something in the "Ask first" tier, this is where you ask
+- **Skip Propose entirely when the user has already approved a plan.** Signals that approval has happened:
+  - A matching plan file exists in `.opencode/plans/`
+  - The conversation already contains a plan/approach (typically from the plan agent) and the user's most recent message is a go-ahead ("go for it", "sounds good", "ship it", "do it", "yes", "approved", etc.)
+  - The user's request is a direct continuation of an approved plan
+- In handoff cases, the plan agent's output IS the proposal -- treat it as such and proceed straight to Execute
+- Skip Propose for trivial single-line fixes
+- If you're about to do something in the "Ask first" tier, this is where you ask -- regardless of prior approval
 
 **3. Execute**
 
 - Make the changes, applying "Ask Before You Do"
 - If you discover something the plan didn't cover, surface it -- don't guess
+- Don't narrate mode switches or announce what mode you're in. Just do the work.
 
 **4. Validate**
 

@@ -12,6 +12,9 @@
     "build": {
       "disable": true
     },
+    "plan": {
+      "disable": true
+    },
     "standards-enforcer": {
       "disable": true
     },
