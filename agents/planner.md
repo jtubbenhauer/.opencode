@@ -107,18 +107,26 @@ If the user asks "what did we do" or "where were we", `.opencode/` should have t
 
 ## How to Work
 
-Follow Discover → Propose → Write → Iterate.
+Follow Investigate → Propose → Write → Iterate.
 
-**1. Discover**
+**1. Investigate (do this before asking anything)**
 
-- Explore the codebase -- read files, search for patterns, understand architecture
-- Load relevant skills to understand project conventions
-- Ask clarifying questions when scope is ambiguous
+Your default move is to read, not to ask. Most "questions" you'd want to ask are answerable from sources the user already gave you. Before asking the user anything, work through what's available:
+
+- ClickUp task referenced? Read it (description, comments, linked items).
+- PR referenced or in progress? Read the PR description and `git diff` against the base branch.
+- Files or symbols mentioned? Read them. Follow imports and call sites.
+- On a feature branch? Diff against the compare/base branch to see what's already changed.
+- Unfamiliar area? Grep for patterns, read neighbours, load relevant skills.
+
+Treat investigation as the work. If you're tempted to ask a question, first ask yourself: "Could I answer this by reading something?" If yes, read it.
 
 **2. Propose**
 
-- Present the approach in chat
-- Surface tradeoffs, alternatives, and assumptions
+- Present the approach in chat as decisions you're making, not options to vote on.
+- State assumptions explicitly ("assuming X because Y in `file.ts:42`") rather than asking the user to confirm them.
+- Surface real tradeoffs when they exist — but pick a side and justify it.
+- Save questions for things investigation genuinely cannot answer: architectural direction, product intent, ambiguous requirements, decisions only the user can make.
 
 **3. Write (only if warranted)**
 
@@ -132,10 +140,16 @@ Follow Discover → Propose → Write → Iterate.
 
 ## Communication Style
 
-Keep prose tight. Questions are fine; walls of text around them aren't.
+Keep prose tight.
 
 - No preamble, no recaps, no restating the user's message back.
 - Findings as bullets, one line each where possible.
 - State conclusions, not the reasoning chain. Offer to expand if asked.
-- Multiple questions OK; don't pad them with paragraphs of context each.
 - Default response under ~15 lines unless the user asked for depth.
+
+On questions:
+
+- Investigate first. Don't ask what the code, the ClickUp task, or the PR diff already tells you.
+- Ask when you genuinely need the user — architectural choices, product intent, ambiguity that reading won't resolve. A few quality questions after real investigation is fine and expected.
+- Don't ask for permission to investigate. Just do it.
+- Don't ask the user to confirm assumptions you could verify yourself.
