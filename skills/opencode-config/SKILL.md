@@ -1,3 +1,8 @@
+---
+name: opencode-config
+description: Meta-skill for editing the opencode setup itself (~/.config/opencode/). Covers directory layout, agent conventions, MCP servers, instructions, skills, and secret handling. Load when modifying opencode config files, agents, plugins, or skills.
+---
+
 # OpenCode Config
 
 Meta-skill for editing the opencode setup itself.

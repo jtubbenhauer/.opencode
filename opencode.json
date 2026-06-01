@@ -1,31 +1,52 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "autoupdate": true,
-  "watcher": {
-    "ignore": ["node_modules/**", "dist/**", ".git/**"]
-  },
-  "instructions": [
-    ".github/instructions/*.md",
-    "~/.config/opencode/instructions/*.md"
-  ],
   "agent": {
     "build": {
-      "disable": true
+      "disable": false,
+      "model": "openrouter/minimax-m3"
     },
     "plan": {
-      "disable": true
+      "disable": false,
+      "model": "openrouter/minimax-m3"
     },
     "standards-enforcer": {
       "disable": true
     },
     "storybook-master": {
       "disable": true
+    },
+    "title": {
+      "model": "openrouter/gpt-5-nano"
+    },
+    "summary": {
+      "model": "openrouter/minimax-m3"
+    },
+    "compaction": {
+      "model": "openrouter/minimax-m3"
+    },
+    "general": {
+      "model": "openrouter/minimax-m3"
+    },
+    "explore": {
+      "model": "openrouter/deepseek-v4-flash"
+    },
+    "scout": {
+      "model": "openrouter/deepseek-v4-flash"
+    },
+    "rubber-duck": {
+      "model": "openrouter/minimax-m3"
     }
   },
+  "autoupdate": true,
+  "instructions": [
+    ".github/instructions/*.md",
+    "~/.config/opencode/instructions/*.md",
+    "~/.config/opencode/instructions/caveman.instructions.md"
+  ],
   "mcp": {
     "clickup": {
       "type": "local",
-      "enabled": true,
+      "enabled": false,
       "command": ["npx", "-y", "mcp-remote", "https://mcp.clickup.com/mcp"],
       "environment": {
         "CLICKUP_MCP_LICENSE_KEY": "{env:CLICKUP_MCP_LICENSE_KEY}",
@@ -34,6 +55,11 @@
         "DOCUMENT_SUPPORT": "true"
       }
     },
+    "engram": {
+      "command": ["/home/jack/go/bin/engram", "mcp", "--tools=agent"],
+      "enabled": false,
+      "type": "local"
+    },
     "github": {
       "type": "remote",
       "url": "https://api.githubcopilot.com/mcp/",
@@ -41,5 +67,11 @@
         "Authorization": "Bearer {env:GITHUB_KEY}"
       }
     }
-  }
+  },
+  "model": "openrouter/minimax-m3",
+  "small_model": "openrouter/gpt-5-nano",
+  "watcher": {
+    "ignore": ["node_modules/**", "dist/**", ".git/**"]
+  },
+  "plugin": ["@tarquinen/opencode-dcp@latest"]
 }

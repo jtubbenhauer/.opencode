@@ -1,0 +1,231 @@
+{
+  "$schema": "https://opencode.ai/theme.json",
+  "defs": {
+    "ghd-bg": "#0d1117",
+    "ghd-bg-elevated": "#161b22",
+    "ghd-bg-inset": "#010409",
+    "ghd-border": "#30363d",
+    "ghd-border-subtle": "#21262d",
+    "ghd-text": "#e6edf3",
+    "ghd-text-muted": "#848d97",
+    "ghd-text-subtle": "#6e7681",
+    "ghd-accent": "#2f81f7",
+    "ghd-blue": "#58a6ff",
+    "ghd-blue-bg": "#388bfd26",
+    "ghd-green": "#3fb950",
+    "ghd-green-bg": "#23863626",
+    "ghd-red": "#f85149",
+    "ghd-red-bg": "#f8514926",
+    "ghd-orange": "#d29922",
+    "ghd-orange-bg": "#d2992226",
+    "ghd-purple": "#d2a8ff",
+    "ghd-cyan": "#79c0ff",
+    "ghd-string": "#a5d6ff",
+    "ghd-variable": "#ffa657",
+    "ghd-type": "#7ee787",
+    "ghd-pink": "#ff7b72",
+    "ghd-yellow": "#e3b341"
+  },
+  "theme": {
+    "primary": {
+      "dark": "ghd-accent",
+      "light": "ghd-blue"
+    },
+    "secondary": {
+      "dark": "ghd-text-muted",
+      "light": "ghd-text-muted"
+    },
+    "accent": {
+      "dark": "ghd-accent",
+      "light": "ghd-blue"
+    },
+    "error": {
+      "dark": "ghd-red",
+      "light": "ghd-red"
+    },
+    "warning": {
+      "dark": "ghd-orange",
+      "light": "ghd-orange"
+    },
+    "success": {
+      "dark": "ghd-green",
+      "light": "ghd-green"
+    },
+    "info": {
+      "dark": "ghd-accent",
+      "light": "ghd-blue"
+    },
+    "text": {
+      "dark": "ghd-text",
+      "light": "ghd-text"
+    },
+    "textMuted": {
+      "dark": "ghd-text-muted",
+      "light": "ghd-text-muted"
+    },
+    "background": {
+      "dark": "ghd-bg",
+      "light": "#ffffff"
+    },
+    "backgroundPanel": {
+      "dark": "ghd-bg-elevated",
+      "light": "#f6f8fa"
+    },
+    "backgroundElement": {
+      "dark": "ghd-bg-inset",
+      "light": "#f6f8fa"
+    },
+    "border": {
+      "dark": "ghd-border",
+      "light": "#d0d7de"
+    },
+    "borderActive": {
+      "dark": "ghd-blue",
+      "light": "ghd-blue"
+    },
+    "borderSubtle": {
+      "dark": "ghd-border-subtle",
+      "light": "#d8dee4"
+    },
+    "diffAdded": {
+      "dark": "ghd-green",
+      "light": "ghd-green"
+    },
+    "diffRemoved": {
+      "dark": "ghd-red",
+      "light": "ghd-red"
+    },
+    "diffContext": {
+      "dark": "ghd-text-muted",
+      "light": "ghd-text-muted"
+    },
+    "diffHunkHeader": {
+      "dark": "ghd-text-muted",
+      "light": "ghd-text-muted"
+    },
+    "diffHighlightAdded": {
+      "dark": "#388bfd26",
+      "light": "#dafbe1"
+    },
+    "diffHighlightRemoved": {
+      "dark": "#f8514926",
+      "light": "#ffebe9"
+    },
+    "diffAddedBg": {
+      "dark": "#23863626",
+      "light": "#dafbe1"
+    },
+    "diffRemovedBg": {
+      "dark": "#f8514926",
+      "light": "#ffebe9"
+    },
+    "diffContextBg": {
+      "dark": "ghd-bg-elevated",
+      "light": "#f6f8fa"
+    },
+    "diffLineNumber": {
+      "dark": "ghd-text-subtle",
+      "light": "#6e7781"
+    },
+    "diffAddedLineNumberBg": {
+      "dark": "#388bfd26",
+      "light": "#dafbe1"
+    },
+    "diffRemovedLineNumberBg": {
+      "dark": "#f8514926",
+      "light": "#ffebe9"
+    },
+    "markdownText": {
+      "dark": "ghd-text",
+      "light": "#24292f"
+    },
+    "markdownHeading": {
+      "dark": "ghd-text",
+      "light": "#24292f"
+    },
+    "markdownLink": {
+      "dark": "ghd-blue",
+      "light": "#0969da"
+    },
+    "markdownLinkText": {
+      "dark": "ghd-blue",
+      "light": "#0969da"
+    },
+    "markdownCode": {
+      "dark": "ghd-cyan",
+      "light": "#0550ae"
+    },
+    "markdownBlockQuote": {
+      "dark": "ghd-text-muted",
+      "light": "#6e7781"
+    },
+    "markdownEmph": {
+      "dark": "ghd-text",
+      "light": "#24292f"
+    },
+    "markdownStrong": {
+      "dark": "ghd-text",
+      "light": "#24292f"
+    },
+    "markdownHorizontalRule": {
+      "dark": "ghd-border",
+      "light": "#d0d7de"
+    },
+    "markdownListItem": {
+      "dark": "ghd-text",
+      "light": "#24292f"
+    },
+    "markdownListEnumeration": {
+      "dark": "ghd-text",
+      "light": "#24292f"
+    },
+    "markdownImage": {
+      "dark": "ghd-text-muted",
+      "light": "#6e7781"
+    },
+    "markdownImageText": {
+      "dark": "ghd-text-muted",
+      "light": "#6e7781"
+    },
+    "markdownCodeBlock": {
+      "dark": "ghd-bg-elevated",
+      "light": "#f6f8fa"
+    },
+    "syntaxComment": {
+      "dark": "ghd-text-muted",
+      "light": "#6e7781"
+    },
+    "syntaxKeyword": {
+      "dark": "ghd-pink",
+      "light": "#cf222e"
+    },
+    "syntaxFunction": {
+      "dark": "ghd-purple",
+      "light": "#8250df"
+    },
+    "syntaxVariable": {
+      "dark": "ghd-variable",
+      "light": "#953800"
+    },
+    "syntaxString": {
+      "dark": "ghd-string",
+      "light": "#0a3069"
+    },
+    "syntaxNumber": {
+      "dark": "ghd-cyan",
+      "light": "#0550ae"
+    },
+    "syntaxType": {
+      "dark": "ghd-type",
+      "light": "#116329"
+    },
+    "syntaxOperator": {
+      "dark": "ghd-text-muted",
+      "light": "#6e7781"
+    },
+    "syntaxPunctuation": {
+      "dark": "ghd-text",
+      "light": "#24292f"
+    }
+  }
+}

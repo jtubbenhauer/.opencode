@@ -1,3 +1,8 @@
+---
+name: get-to-the-point
+description: Triage scrum/standup notes into points vs status vs drop, then produce annotated notes and a cue card for spoken delivery. Use when the user asks to "find my points", "get to the point", or is prepping spoken/video scrum from files like tmp/chat.md or tmp/scrum.md.
+---
+
 # Get to the Point
 
 Use when prepping scrum/standup notes, or when the user asks to "find my points",

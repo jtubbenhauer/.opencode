@@ -1,3 +1,8 @@
+---
+name: fixup-workflow
+description: Process review notes the user left in .opencode/fixups.md. Triggered by "fix the notes", "fix the fixups", "address the notes I left", "fix my review comments".
+---
+
 # Fixup Workflow
 
 ## What Are Fixups
@@ -18,7 +23,8 @@ The user leaves review notes in `.opencode/fixups.md` while reading code in Neov
 1. Read `.opencode/fixups.md` immediately — don't search the codebase for TODOs
 2. Process entries ONE AT A TIME
 3. For each entry: read the referenced file, apply the fix, remove that line from fixups.md
-4. After all entries are done, delete `.opencode/fixups.md` entirely
+4. If the fixup revealed a gotcha, pattern, or non-obvious discovery, call `mem_save` before processing the next entry
+5. After all entries are done, delete `.opencode/fixups.md` entirely
 
 ## Critical Constraints
 
